@@ -5,4 +5,7 @@ class Artigo(models.Model):
     conteudo = models.TextField()
     publicacao = models.DateTimeField()
 
+    def __unicode__(self):
+        return self.titulo
+
 
